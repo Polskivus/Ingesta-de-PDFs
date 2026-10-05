@@ -44,7 +44,7 @@ def extraer_documento(ruta_pdf):
     return paginas
 
 if __name__ == "__main__":
-    for p in extraer_documento("prueba.pdf"):
+    for p in extraer_documento("prueba_corta.pdf"):
         print(f"--- Pagina {p['pagina']} ({p['origen']}, {len(p['texto'])} caracteres) ---")
         print(p["texto"][:200].replace("\n", " "))
         print()
