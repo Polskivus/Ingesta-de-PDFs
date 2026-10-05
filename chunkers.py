@@ -17,7 +17,7 @@ def chunk_fixed(paginas, size=500):
             chunks.append(crear_chunks(p, "fixed", chunk))
     return chunks
 
-def chunk_overlapse(paginas, size=500, solape=100):
+def chunk_overlap(paginas, size=500, solape=100):
     paso = size - solape
     chunks = []
     for p in paginas:
